@@ -1,0 +1,8 @@
+1. Create constructor function called Sport with these properties: kind (indoor, outdoor, all), season (summer, winter)
+2. Create an object from this constructor function
+3. Create constructor function called Cricket with these properties: teamSize, overs
+4. create an object from Cricket
+5. set the prototype of cricket to sport in two distinct ways:
+	a. object to object
+	b. inside the constructor function
+6. access the season and kind from cricket and log
