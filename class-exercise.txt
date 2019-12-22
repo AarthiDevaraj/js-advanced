@@ -1,0 +1,5 @@
+1.  Create a book store class
+2.  Book store should have a property called books, which should be an array of Book objects
+3.  create a book class which has title, author, pages, and price properties
+4.  Book constructor should take these properties
+5.  Create methods to book store to add, search, and delete books
