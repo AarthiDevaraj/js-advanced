@@ -1,6 +1,14 @@
+//  It is possible to throw any object, but conventionally,
+//  objects of Error class or its subclasses are thrown.
+//  For custom error classes, we extend the Error base class
+//  and pass the message to baseclass constructor
 class LoginFailedError extends Error {
   constructor(message) {
-    super(message); //  compulsory
+    //  calling the base-class constructor in case of
+    //  inheritance is mandatory
+    //  super(...) has to be the first line in the
+    //  constructor in such cases
+    super(message);
   }
 }
 

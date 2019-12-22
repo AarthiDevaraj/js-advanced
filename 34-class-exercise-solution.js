@@ -10,18 +10,26 @@ class Book {
 class BookStore {
   constructor(name) {
     this.books = [];
-    this._name = name;
+    this._name = name; //  there is no private. underscore is used to denote implementation
   }
 
+  //  getter is a method inside the scope, but works like a read-only property outside
+  //  accessed like x = instance.name; always appears at the rhs of the assignment
+  //  getter should not take any argument, but should return
+  //  calling getter instance.name() is illegal
   get name() {
     return this._name.toUpperCase();
   }
 
+  //  setter is a method inside but works like a write-only property outside
+  //  setter appears at the lhs of the assignment
+  //  calling setter instance.name(value) is illegal
+  //  useful if validation needs to be done.
   set name(newName) {
     if (newName.length >= 5) {
       this._name = newName;
     } else {
-      console.log('Name is not right');
+      throw new Error('Name should be at least 5 characters');
     }
   }
 
@@ -63,3 +71,5 @@ readersParadise.name = 'Books forever';
 
 console.log(readersParadise.name);
 console.log(readersParadise._name);
+
+console.log(typeof readersParadise);
