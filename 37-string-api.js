@@ -29,6 +29,11 @@ let lineTwo = 'the NaMe that can be Named is not the eternal name';
 // console.log(line.indexOf());
 
 //  search takes a regular expression
+//  https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions
+//  https://www.regexpal.com/
+//  Comparison: https://en.wikipedia.org/wiki/Comparison_of_regular-expression_engines
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search
 console.log(line.search('name'));
 console.log(lineTwo.search(/name/i));
+
+//
