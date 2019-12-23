@@ -1,0 +1,4 @@
+1.  Create a class Email
+2.  This should have one property called email, which is a valid email
+3.  If the user doesn't provide the valid email, throw EmailNotValidError (create the custom error)
+4.  The class should also have a method, which gives a list of username, domain, and tld of the email stored
