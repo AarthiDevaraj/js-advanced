@@ -55,5 +55,7 @@ console.log(line.substr(4, 4)); //  it is start index and 'length' (not ending i
 //  Beware, the search string is a regular expression
 //  By default, the first match is replaced
 //  For all replacement, use g flag with regex
+
+//  More on JavaScript regular expressions: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 let replacedString = line.replace(/name/g, 'NAME');
 console.log(replacedString);
