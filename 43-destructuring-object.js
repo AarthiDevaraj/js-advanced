@@ -1,3 +1,5 @@
+//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
 let person = {
   id: 10,
   first_name: 'Mella',
@@ -14,3 +16,10 @@ console.log(id, ip_address);
 let { defaultProperty = new Date() } = person;
 
 console.log(defaultProperty);
+
+//  aliasing variable
+//  variable fname is created and gets value from first_name
+//  should provide the default value
+let { first_name: fname = 'Name' } = person;
+
+console.log(fname);
