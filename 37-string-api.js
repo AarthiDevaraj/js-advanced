@@ -49,3 +49,4 @@ console.log(line.substring(5, 12));
 
 //  substring and slice are almost identical but they differ how they handle the negative indexes
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
+console.log(line.substr(4, 4)); //  it is start index and 'length' (not ending index!)
