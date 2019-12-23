@@ -36,4 +36,9 @@ let lineTwo = 'the NaMe that can be Named is not the eternal name';
 console.log(line.search('name'));
 console.log(lineTwo.search(/name/i));
 
-//
+//  length
+console.log(line.length);
+
+//  concatenation
+console.log(line.concat('concatenation by concat api'));
+console.log(line + 'concatenation by + operator overload for string');
