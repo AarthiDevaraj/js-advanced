@@ -37,3 +37,5 @@ console.log(dateOne);
 //  from iso date format
 let dateTwo = new Date('1989-07-15');
 console.log(dateTwo);
+
+//  Also, take a look at moment.js: https://momentjs.com/docs/
