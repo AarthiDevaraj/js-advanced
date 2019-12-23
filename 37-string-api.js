@@ -42,3 +42,10 @@ console.log(line.length);
 //  concatenation
 console.log(line.concat('concatenation by concat api'));
 console.log(line + 'concatenation by + operator overload for string');
+
+//  substring / selection
+console.log(line.slice(5, 12));
+console.log(line.substring(5, 12));
+
+//  substring and slice are almost identical but they differ how they handle the negative indexes
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
