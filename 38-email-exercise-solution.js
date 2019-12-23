@@ -49,8 +49,8 @@ console.log(emailTwo.sections);
 
 try {
   let emailInvalid = new Email('person#domain');
-  console.log(emailTwo.email);
-  console.log(emailTwo.sections);
+  console.log(emailInvalid.email);
+  console.log(emailInvalid.sections);
 } catch (e) {
   if (e instanceof EmailNotValidError) {
     console.error('Email not valid', e.message);
